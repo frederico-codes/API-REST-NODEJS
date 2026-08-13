@@ -2,11 +2,12 @@
   "name": "api-rest-nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js", 
+  "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "lint": "eslint src --ext .ts --fix",
-    "build": "tsc"
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "build": "tsc",
+    "lint": "eslint src --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,7 @@
     "@types/node": "^25.9.1",
     "eslint": "^8.57.1",
     "tsx": "^4.22.3",
-    "typescript": "^6.0.3"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "fastify": "^5.8.5",
