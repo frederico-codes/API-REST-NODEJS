@@ -7,7 +7,7 @@
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
     "build": "tsc",
-    "lint": "eslint src --ext .ts"
+    "lint": "eslint src db --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +20,11 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@fastify/cookie": "^11.1.2",
+    "dotenv": "^17.4.2",
     "fastify": "^5.8.5",
     "knex": "^3.3.0",
-    "sqlite3": "^6.0.1"
+    "sqlite3": "^6.0.1",
+    "zod": "^4.4.3"
   }
 }

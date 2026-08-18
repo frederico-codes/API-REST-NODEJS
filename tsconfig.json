@@ -1,11 +1,10 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     "module": "nodenext",
-    "target": "es2020",
-    
-    "strict": true,     
+    "target": "es2016",
+    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "outDir": "dist"
   }
 }
