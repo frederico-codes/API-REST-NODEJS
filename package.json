@@ -7,7 +7,8 @@
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
     "build": "tsc",
-    "lint": "eslint src db --ext .ts"
+    "lint": "eslint src db --ext .ts",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +16,12 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^25.9.1",
+    "@types/supertest": "^7.2.1",
     "eslint": "^8.57.1",
+    "supertest": "^7.2.2",
     "tsx": "^4.22.3",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^4.1.10"
   },
   "dependencies": {
     "@fastify/cookie": "^11.1.2",
