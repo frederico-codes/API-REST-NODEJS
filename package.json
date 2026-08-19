@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
-    "build": "tsc",
+    "build": "tsup src --out-dir build",
     "lint": "eslint src db test --ext .ts",
     "test": "vitest"
+    
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "@types/supertest": "^7.2.1",
     "eslint": "^8.57.1",
     "supertest": "^7.2.2",
+    "tsup": "^8.5.1",
     "tsx": "^4.22.3",
     "typescript": "^5.3.3",
     "vitest": "^4.1.10"
